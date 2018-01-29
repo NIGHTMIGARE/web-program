@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jquery小程序</title>
+	<script  type="text/javascript" src="./jquery-3.2.1.js"></script>
+	<style type="text/css">
+	/*	div{
+			padding: 8px 0px;
+			font-size: 12px;
+			text-align: center;
+			border: 1px solid #888;
+
+		}*/
+	</style>
+	<!-- <script type="text/javascript">
+	// $(document).ready(function(){$("div").html("hello world");}); 
+		
+	</script> -->
+</head>
+<body>
+	<!-- jquery对象转dom对象用get() -->
+	<!-- <div>元素一</div>
+	<div>元素二</div>
+	<div>元素三</div>
+	<script type="text/javascript">
+		var $div=$('div');//jquery对象
+		var div= $div.get(0);//通过get()方法取对象
+		div.style.color='red';//dom对象
+	</script> -->
+	<!-- dom对象转jquery对象用$()方法 -->
+	<div>元素一</div>
+	<div>元素二</div>
+	<div>元素三</div>
+	<script type="text/javascript">
+	var div=document.getElementsByTagName('div');//dom对象
+	var $div=$('div');
+	var $first=$div.first();
+	$first.css('color','red');
+
+		
+	</script>
+</body>
+</html>
